@@ -43,11 +43,7 @@ func main(){
 
               // Condition where valid input is added to slice
 
-              if (len(sli) <  i+1){
-                  sli = append(sli, valid_int)
-              } else {
-                  sli[0] = valid_int
-              }
+              sli = append(sli, valid_int)
 
               fmt.Printf("Current slice contains: ")
               sort.Ints(sli)
